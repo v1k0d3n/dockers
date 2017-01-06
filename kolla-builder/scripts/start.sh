@@ -18,7 +18,7 @@ sleep 2
 docker login -u="$DOCKER_USER" -p="$DOCKER_PASS" $DOCKER_REGISTRY
 
 # Attempt to run kolla-build on container entry:
-kolla-build --config-file /etc/kolla/kolla-build.conf
+kolla-build $KOLLA_PROJECT # --config-file /etc/kolla/kolla-build.conf
 #$KOLLA_PROJECT 
 
 # TEST ONLY - Push completed containers to the container registry (rework for python/golan):
