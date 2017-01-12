@@ -38,6 +38,7 @@ RUN apt-get update && \
         sudo \
         python3 \
         curl \
+        screen \
         docker.io
 
 RUN rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
